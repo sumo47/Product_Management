@@ -202,8 +202,6 @@ const userLogin = async function (req, res) {
                 data.address=findData.address
 
             }
-          
-
 
         //unique email and phone
         if(data.email||data.phone){
@@ -233,7 +231,6 @@ const userLogin = async function (req, res) {
 
             const uploadedFileURL=await uploadFile(files[0])
             data.profileImage=uploadedFileURL
- 
         }
 
         if(req.body.profileImage==""){ 
